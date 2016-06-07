@@ -50,7 +50,6 @@ namespace Csharp101_1.Classes
 
         void MyNamedMethodParams(int joe = 0, string lucy = null)
         {
-
         }
 
         void NamedTest()
@@ -58,6 +57,17 @@ namespace Csharp101_1.Classes
             // named parameters allow you to clearly specify which
             // parameters you are supplying
             MyNamedMethodParams(lucy: "hello");
+        }
+        
+        void MixedRequiredAndOptional(string foo, string bar = "", string baz = "")
+        {
+        }
+        
+        void MixedTest()
+        {
+            MixedRequiredAndOptional(baz: "hi", foo: "hello"); // explicitly calling parameters
+            MixedRequiredAndOptional("hello", bar: "hi"); // can ommit name if in order
+            // MixedRequiredAndOptional(bar: "hi", baz: "yo"); // won't compile - missing `foo`
         }
     }
 }
