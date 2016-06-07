@@ -12,10 +12,10 @@
 
             // implicit variable declaration
             var myInferredInteger = 0; // implicitly declared as int
-            myInferredInteger = "hello"; // won't compile
+            // myInferredInteger = "hello"; // won't compile
 
             var myInferredString = "hello"; // implicitly declared as string
-            myInferredString = 0; // won't compile
+            // myInferredString = 0; // won't compile
         }
     }
 }
